@@ -1,9 +1,18 @@
+<!--
+ * @Author: wxfeiang
+ * @Description:
+ * @Date: 2023-02-19 11:57:53
+ * @LastEditTime: 2023-02-19 17:47:15
+ * @FilePath: /vue3template/src/components/HelloWorld.vue
+-->
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-defineProps<{ msg: string }>()
+defineProps<{ msg: string }>();
 
-const count = ref(0)
+console.log(" HI: ====", import.meta.env.VITE_BASE_API);
+
+const count = ref(0);
 </script>
 
 <template>
@@ -19,8 +28,7 @@ const count = ref(0)
 
   <p>
     Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a
     >, the official Vue + Vite starter
   </p>
   <p>

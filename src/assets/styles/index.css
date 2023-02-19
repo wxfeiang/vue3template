@@ -1,0 +1,11 @@
+//  css 变量
+
+
+:root {
+  --main-bg-color: pink;
+}
+ 
+body {
+  background-color: var(--main-bg-color);
+}
+
