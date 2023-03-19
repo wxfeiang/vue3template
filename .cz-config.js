@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description:
  * @Date: 2023-02-19 10:07:29
- * @LastEditTime: 2023-02-19 13:22:20
+ * @LastEditTime: 2023-03-13 23:16:25
  * @FilePath: /vue3template/.cz-config.js
  */
 module.exports = {
@@ -76,7 +76,7 @@ module.exports = {
   allowCustomScopes: true,
 
   // 跳过要询问的步骤
-  skipQuestions: ['body', 'footer'],
+  //skipQuestions: ['body', 'footer'],
 
   // subject 限制长度
   subjectLimit: 100,
