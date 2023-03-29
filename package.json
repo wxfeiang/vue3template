@@ -22,6 +22,7 @@
     "@commitlint/config-conventional": "^17.4.4",
     "@types/node": "^18.14.0",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
     "commitizen": "^4.3.0",
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
@@ -37,7 +38,7 @@
     "unplugin-auto-import": "^0.15.1",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.1.0",
-    "vite-plugin-remove-console": "^2.0.0",
+    "vite-plugin-remove-console": "^2.1.0",
     "vue-tsc": "^1.0.24"
   },
   "config": {
