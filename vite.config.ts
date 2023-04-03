@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description: 项目配置文件
  * @Date: 2023-02-19 09:55:35
- * @LastEditTime: 2023-03-29 21:26:13
+ * @LastEditTime: 2023-04-02 22:49:09
  * @FilePath: /vue3template/vite.config.ts
  */
 import vue from '@vitejs/plugin-vue';
@@ -59,7 +59,6 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, 'src'),
       },
     },
-
     server: {
       port: 3500, //启动端口
       hmr: {

@@ -12,5 +12,6 @@ declare module '@vue/runtime-core' {
     Components: typeof import('./src/components/index.tsx')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Menu: typeof import('./src/components/menu.tsx')['default']
+    Ss: typeof import('./src/components/ss.tsx')['default']
   }
 }
