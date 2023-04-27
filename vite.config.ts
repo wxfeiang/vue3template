@@ -48,10 +48,11 @@ export default defineConfig(({ mode }) => {
     ],
     envDir: './.env',
     envPrefix: ['VITE_', 'DZ_'],
-    // build: {
-    //   manifest: true,
-    //   outDir: `./dist/${mode}`,
-    // },
+    base: './',
+    build: {
+      manifest: true,
+      outDir: `./dist/${mode}`,
+    },
 
     resolve: {
       //设置别名
