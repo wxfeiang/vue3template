@@ -2,17 +2,19 @@
  * @Author: wxfeiang
  * @Description: 项目配置文件
  * @Date: 2023-02-19 09:55:35
- * @LastEditTime: 2023-04-02 22:49:09
+ * @LastEditTime: 2023-05-03 00:40:50
  * @FilePath: /vue3template/vite.config.ts
  */
 import vue from '@vitejs/plugin-vue';
 import * as path from 'path';
+
 import AutoImport from 'unplugin-auto-import/vite';
+import { VantResolver } from 'unplugin-vue-components/resolvers';
 import { defineConfig, loadEnv } from 'vite';
+
 // 可以解构更多
 
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 import Components from 'unplugin-vue-components/vite';
 //
 import removeConsole from 'vite-plugin-remove-console';
@@ -27,7 +29,7 @@ export default defineConfig(({ mode }) => {
       // 自动引入
       AutoImport({
         imports: ['vue', 'vue-router'],
-        //resolvers: [ElementPlusResolver()], // 自动按需UI组件库
+        resolvers: [VantResolver()], // 自动按需UI组件库
         //dirs: ['./src/components'], //  自动导入自己的模块
         dts: 'src/auto-imports.d.ts', // 可以自定义文件生成的位置，默认是根目录下
         eslintrc: {
@@ -43,7 +45,7 @@ export default defineConfig(({ mode }) => {
         extensions: ['vue', 'md', 'jsx', 'ts', 'tsx'],
 
         // 第三方组件库的解析器
-        resolvers: [ElementPlusResolver()],
+        resolvers: [VantResolver()],
       }),
     ],
     envDir: './.env',
@@ -61,10 +63,10 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      port: 3500, //启动端口
+      port: 5300, //启动端口
       hmr: {
         host: '0.0.0.0',
-        port: 3500,
+        port: 5300,
       },
       // 设置 https 代理
       proxy: {
