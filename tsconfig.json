@@ -20,9 +20,11 @@
       "src/**/*.vue",
       "src/**/*.d.ts",
       "src/**/*.jsx",
-      "src/**/*.ts",
+      "src/**/*.t/s",
       "src/**/*.js",
       "./core/auto-import.ts",
+      "./vite.config.ts",
+      "*.ts"
     ],
   "references": [
     {

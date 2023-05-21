@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description: 项目配置文件
  * @Date: 2023-02-19 09:55:35
- * @LastEditTime: 2023-05-21 23:11:17
+ * @LastEditTime: 2023-05-21 23:43:57
  * @FilePath: /vue3template/vite.config.ts
  */
 import vue from '@vitejs/plugin-vue';

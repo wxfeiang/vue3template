@@ -11,6 +11,7 @@ module.exports = {
       modules: true,
     },
     parser: 'babel-eslint',
+    requireConfigFile: false,
   },
 
   env: {
