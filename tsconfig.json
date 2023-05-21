@@ -14,18 +14,19 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "noEmit": true,
-    
   },
   "include": [
       "src/*",
       "src/**/*.vue",
-      "src/**/*.d.ts", 
-      "src/**/*.jsx", 
-      "src/**/*.ts", 
-      "src/**/*.js", "src/components/HelloWorld.tsx"],
+      "src/**/*.d.ts",
+      "src/**/*.jsx",
+      "src/**/*.ts",
+      "src/**/*.js",
+      "./core/auto-import.ts",
+    ],
   "references": [
-    { 
-      "path": "./tsconfig.node.json" 
+    {
+      "path": "./tsconfig.node.json"
     }
   ]
 }
