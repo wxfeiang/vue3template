@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description: 项目配置文件
  * @Date: 2023-02-19 09:55:35
- * @LastEditTime: 2023-05-21 22:12:38
+ * @LastEditTime: 2023-05-21 23:11:17
  * @FilePath: /vue3template/vite.config.ts
  */
 import vue from '@vitejs/plugin-vue';
@@ -40,12 +40,10 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      port: 3500, //启动端口
-      hmr: {
-        host: '0.0.0.0',
-        port: 3500,
-      },
-      // 设置 https 代理
+      https: false,
+      hrm: true,
+      port: env.VITE_PORT,
+      host: '0.0.0.0',
       proxy: {
         [env.VITE_BASE_URL]: {
           target: env.VITE_BASE_URL,
