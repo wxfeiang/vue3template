@@ -2,67 +2,23 @@
  * @Author: wxfeiang
  * @Description:
  * @Date: 2023-02-19 10:07:29
- * @LastEditTime: 2023-03-13 23:16:25
+ * @LastEditTime: 2023-05-28 11:46:54
  * @FilePath: /vue3template/.cz-config.js
  */
 module.exports = {
+  // prettier-ignore
   types: [
-    {
-      value: 'feature',
-      name: 'feature:  增加新功能',
-    },
-    {
-      value: 'bug',
-      name: 'bug:      测试反馈bug列表中的bug号',
-    },
-    {
-      value: 'fix',
-      name: 'fix:      修复bug',
-    },
-    {
-      value: 'ui',
-      name: 'ui:       更新UI',
-    },
-    {
-      value: 'docs',
-      name: 'docs:     文档变更',
-    },
-    {
-      value: 'style',
-      name: 'style:    代码格式(不影响代码运行的变动)',
-    },
-    {
-      value: 'perf',
-      name: 'perf:     性能优化',
-    },
-    {
-      value: 'refactor',
-      name: 'refactor: 重构(既不是增加feature，也不是修复bug)',
-    },
-    {
-      value: 'release',
-      name: 'release:  发布',
-    },
-    {
-      value: 'deploy',
-      name: 'deploy:   部署',
-    },
-    {
-      value: 'test',
-      name: 'test:     增加测试',
-    },
-    {
-      value: 'chore',
-      name: 'chore:    构建过程或辅助工具的变动(更改配置文件)',
-    },
-    {
-      value: 'revert',
-      name: 'revert:   回退',
-    },
-    {
-      value: 'build',
-      name: 'build:    打包',
-    },
+    { value: "feat",     name: "特性:     ✨  新增功能", emoji: ":sparkles:" },
+    { value: "fix",      name: "修复:     🐛  修复缺陷", emoji: ":bug:" },
+    { value: "docs",     name: "文档:     📝  文档变更", emoji: ":memo:" },
+    { value: "style",    name: "格式:     💄  代码格式（不影响功能，例如空格、分号等格式修正）", emoji: ":lipstick:" },
+    { value: "refactor", name: "重构:     ♻️  代码重构（不包括 bug 修复、功能新增）", emoji: ":recycle:" },
+    { value: "perf",     name: "性能:     ⚡️  性能优化", emoji: ":zap:" },
+    { value: "test",     name: "测试:     ✅  添加疏漏测试或已有测试改动", emoji: ":white_check_mark:"},
+    { value: "build",    name: "构建:     📦️  构建流程、外部依赖变更（如升级 npm 包、修改 vite 配置等）", emoji: ":package:"},
+    { value: "ci",       name: "集成:     🎡  修改 CI 配置、脚本",  emoji: ":ferris_wheel:"},
+    { value: "revert",   name: "回退:     ⏪️  回滚 commit",emoji: ":rewind:"},
+    { value: "chore",    name: "其他:     🔨  对构建过程或辅助工具和库的更改（不影响源文件、测试用例）", emoji: ":hammer:"},
   ],
   // override the messages, defaults are as follows
   messages: {
