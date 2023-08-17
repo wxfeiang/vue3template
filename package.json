@@ -14,6 +14,7 @@
     "commit": "git-cz"
   },
   "dependencies": {
+    "@kjgl77/datav-vue3": "^1.6.1",
     "vue": "^3.3.2"
   },
   "devDependencies": {
@@ -41,6 +42,7 @@
     "pinia": "^2.0.36",
     "prettier": "^2.8.8",
     "reset-css": "^5.0.1",
+    "sass": "^1.65.1",
     "typescript": "^4.9.5",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",

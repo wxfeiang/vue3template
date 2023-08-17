@@ -1,4 +1,3 @@
-// import layout from "@/layout/index.vue"
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
 /**
@@ -112,31 +111,22 @@ const publicRoutes: Array<RouteRecordRaw> = [
     component: () => import('@/views/error-page/404.vue'),
   },
   {
-    path: '/401',
-    name: '401',
-    component: () => import('@/views/error-page/401.vue'),
+    path: '/datav',
+    name: 'datav',
+    component: () => import('@/views/datav/index.vue'),
   },
   {
     path: '/',
-    redirect: 'choiceIcon',
-    component: layout,
+    redirect: 'home',
+    component: () => import('@/layout/index.vue'),
     children: [
       {
-        path: '/choiceIcon',
+        path: '/home',
         name: 'icon-gerenzhongxin',
-        component: () => import('@/views/choiceIcon/index.vue'),
+        component: () => import('@/views/home/index.vue'),
         meta: {
           title: 'choicecon',
           icon: 'el-icon-user',
-        },
-      },
-      {
-        path: '/from',
-        name: 'from',
-        component: () => import('@/views/from/index.vue'),
-        meta: {
-          title: 'from',
-          icon: 'el-icon-aim',
         },
       },
     ],
