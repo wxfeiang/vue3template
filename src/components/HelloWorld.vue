@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description:
  * @Date: 2023-02-19 11:57:53
- * @LastEditTime: 2023-05-22 00:13:13
+ * @LastEditTime: 2023-06-03 16:12:33
  * @FilePath: /vue3template/src/components/HelloWorld.vue
 -->
 
@@ -31,6 +31,19 @@ const dd = () => {
   <el-button type="danger"> {{ count }}</el-button>
 
   <Menu />
+  <a href="s" class="text-green-700">dfnkdlfnlkdn</a>
+  <div class="flex bg-orange-50">eeeeeee1</div>
+  <div
+    class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex justify-between space-x-4"
+  >
+    <div class="shrink-0">
+      <img class="h- w-12" src="/img/logo.svg" alt="ChitChat Logo" />
+    </div>
+    <div>
+      <div class="text-xl font-medium text-black">ChitChat</div>
+      <p class="text-slate-500">You have a new message!</p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
