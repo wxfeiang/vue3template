@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description: 配置组件导入
  * @Date: 2023-05-21 22:03:24
- * @LastEditTime: 2023-05-28 10:54:03
+ * @LastEditTime: 2023-08-20 16:35:22
  * @FilePath: /vue3template/core/auto-import.ts
  */
 
@@ -16,7 +16,7 @@ export default [
   AutoImport({
     imports: ['vue', 'vue-router'],
     resolvers: [ElementPlusResolver()], // 自动按需UI组件库
-    //dirs: ['./src/components'], //  自动导入自己的模块
+    dirs: ['./src/components', 'src/composables/**/*'], //  自动导入自己的模块
     dts: 'core/types/auto-imports.d.ts', // 可以自定义文件生成的位置，默认是根目录下
     vueTemplate: true,
     defaultExportByFilename: true,

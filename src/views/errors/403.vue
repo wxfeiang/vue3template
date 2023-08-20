@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="">layout ===》 首页</div>
+  <div class="">403</div>
 </template>
 <style lang="scss" scoped>
 //@import url(); 引入公共css类

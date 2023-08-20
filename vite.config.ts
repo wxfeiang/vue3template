@@ -52,6 +52,11 @@ export default ({ command, mode }: ConfigEnv) => {
         },
       },
     },
+    css: {
+      postcss: {
+        plugins: [require('tailwindcss'), require('autoprefixer')],
+      },
+    },
   };
   return result;
 };
