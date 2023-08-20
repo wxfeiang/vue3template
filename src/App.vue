@@ -3,7 +3,7 @@ import { FullScreenContainer } from "@kjgl77/datav-vue3";
 </script>
 
 <template>
-  <FullScreenContainer style="background: #000">
+  <FullScreenContainer style="background: #f5f5f5">
     <router-view></router-view>
   </FullScreenContainer>
 </template>
