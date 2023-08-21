@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description:
  * @Date: 2023-02-19 11:57:53
- * @LastEditTime: 2023-08-20 16:30:15
+ * @LastEditTime: 2023-08-20 19:34:40
  * @FilePath: /vue3template/src/components/HelloWorld.vue
 -->
 
@@ -31,7 +31,7 @@ const dd = () => {
   <el-button type="danger"> {{ count }}</el-button>
 
   <Menu />
-  <a href="s" class="text-green-700">dfnkdlfnlkdn</a>
+  <div href="s" class="text-red-600 bg-slate-400 mr-10 p-5">tailwindcss</div>
   <div class="flex bg-orange-50">eeeeeee1</div>
   <div
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex justify-between space-x-4"
