@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     Datav: typeof import('./../../src/components/datav.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElIcon: typeof import('element-plus/es')['ElIcon']
+    Form: typeof import('./../../src/components/Form/index.vue')['default']
     HelloWorld: typeof import('./../../src/components/HelloWorld.vue')['default']
     IEpEdit: typeof import('~icons/ep/edit')['default']
     IEpMuteNotification: typeof import('~icons/ep/mute-notification')['default']
