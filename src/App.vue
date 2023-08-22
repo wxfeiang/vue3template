@@ -1,11 +1,7 @@
-<script setup lang="ts">
-import { FullScreenContainer } from "@kjgl77/datav-vue3";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <FullScreenContainer style="background: #000">
-    <router-view></router-view>
-  </FullScreenContainer>
+  <router-view></router-view>
 </template>
 
 <style scoped></style>
