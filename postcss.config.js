@@ -12,5 +12,6 @@ module.exports = {
       ],
       grid: true,
     },
+    tailwindcss: {},
   },
 };
