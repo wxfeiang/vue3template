@@ -10,6 +10,11 @@ export default {
       name: 'login',
       component: () => import('@/views/auth/index.vue'),
     },
+    {
+      path: 'dataV',
+      name: 'dataV',
+      component: () => import('@/views/datav/index.vue'),
+    },
     // {
     //   path: 'register',
     //   name: 'register',

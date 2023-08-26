@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     ElIcon: typeof import('element-plus/es')['ElIcon']
     Form: typeof import('./../../src/components/Form/index.vue')['default']
     HelloWorld: typeof import('./../../src/components/HelloWorld.vue')['default']
+    IEpApple: typeof import('~icons/ep/apple')['default']
     IEpEdit: typeof import('~icons/ep/edit')['default']
     IEpMuteNotification: typeof import('~icons/ep/mute-notification')['default']
     Login: typeof import('./../../src/components/Login.vue')['default']
