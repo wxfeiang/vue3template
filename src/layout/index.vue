@@ -19,6 +19,7 @@
 
           <el-menu-item index="/layout/home">项目介绍</el-menu-item>
           <el-menu-item index="/">返回登录</el-menu-item>
+          <el-menu-item index="/layout/test">测试页面</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="2">
           <template #title>

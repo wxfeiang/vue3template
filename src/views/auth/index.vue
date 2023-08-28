@@ -3,8 +3,6 @@ const { Login, userInfo, loginFrom, testToke } = useAuth();
 </script>
 <template>
   <div class="">
-    <HelloWorld></HelloWorld>
-
     用户名:{{ loginFrom.username }} 密码:{{ loginFrom.password }}
     <el-button type="success" @click="Login">点击登陆</el-button>
 

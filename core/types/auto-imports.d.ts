@@ -8,7 +8,6 @@ declare global {
   const CacheEnum: typeof import('../../src/enum/CacheEnum')['CacheEnum']
   const Constant: typeof import('../../src/enum/constant')['Constant']
   const EffectScope: typeof import('vue')['EffectScope']
-  const ElLoading: typeof import('element-plus/es')['ElLoading']
   const ElMessage: typeof import('element-plus/es')['ElMessage']
   const HttpCodeEnum: typeof import('../../src/enum/HttpCodeEnum')['HttpCodeEnum']
   const RouteEnum: typeof import('../../src/enum/RouteEnum')['RouteEnum']
@@ -98,7 +97,6 @@ declare module 'vue' {
     readonly CacheEnum: UnwrapRef<typeof import('../../src/enum/CacheEnum')['CacheEnum']>
     readonly Constant: UnwrapRef<typeof import('../../src/enum/constant')['Constant']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElLoading: UnwrapRef<typeof import('element-plus/es')['ElLoading']>
     readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly HttpCodeEnum: UnwrapRef<typeof import('../../src/enum/HttpCodeEnum')['HttpCodeEnum']>
     readonly RouteEnum: UnwrapRef<typeof import('../../src/enum/RouteEnum')['RouteEnum']>

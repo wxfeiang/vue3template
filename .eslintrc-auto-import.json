@@ -7,7 +7,6 @@
     "ComputedRef": true,
     "Constant": true,
     "EffectScope": true,
-    "ElLoading": true,
     "ElMessage": true,
     "HttpCodeEnum": true,
     "InjectionKey": true,

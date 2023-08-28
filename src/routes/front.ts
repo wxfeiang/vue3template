@@ -12,5 +12,10 @@ export default {
         icon: 'el-icon-user',
       },
     },
+    {
+      path: '/layout/test',
+      name: 'test',
+      component: () => import('@/views/test/index.vue'),
+    },
   ],
 } as RouteRecordRaw;
