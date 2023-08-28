@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description: 配置组件导入
  * @Date: 2023-05-21 22:03:24
- * @LastEditTime: 2023-08-21 22:34:57
+ * @LastEditTime: 2023-08-28 15:28:02
  * @FilePath: /vue3template/core/auto-import.ts
  */
 
@@ -16,14 +16,19 @@ import Components from 'unplugin-vue-components/vite';
 export default [
   // 自动引入
   AutoImport({
-    imports: ['vue', 'vue-router'],
+    imports: ['vue', 'vue-router', 'pinia'], // 自动导入的api
     resolvers: [
       ElementPlusResolver(),
       IconsResolver({
         prefix: 'Icon',
       }),
     ], // 自动按需UI组件库
-    dirs: ['./src/components', 'src/composables/**/*'], //  自动导入自己的模块
+    dirs: [
+      'src/components',
+      'src/composables/**/*',
+      'src/enum/**/*',
+      'src/store/**/*',
+    ], //  自动导入自己的模块
     dts: 'core/types/auto-imports.d.ts', // 可以自定义文件生成的位置，默认是根目录下
     vueTemplate: true,
     defaultExportByFilename: true,

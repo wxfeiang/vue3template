@@ -2,7 +2,7 @@
  * @Author: wxfeiang
  * @Description: 项目配置文件
  * @Date: 2023-02-19 09:55:35
- * @LastEditTime: 2023-05-28 10:59:25
+ * @LastEditTime: 2023-08-28 12:28:34
  * @FilePath: /vue3template/vite.config.ts
  */
 import vue from '@vitejs/plugin-vue';
@@ -16,6 +16,7 @@ import removeConsole from 'vite-plugin-remove-console';
 
 export default ({ command, mode }: ConfigEnv) => {
   const env = loadEnv(mode, './.env');
+
   const result = {
     plugins: [
       ...autoImport,
@@ -43,12 +44,14 @@ export default ({ command, mode }: ConfigEnv) => {
       port: env.VITE_PORT,
       host: '0.0.0.0',
       proxy: {
-        //TODO:改成多数组形式
         [env.VITE_BASE_API]: {
           target: env.VITE_BASE_URL,
           changeOrigin: true,
           rewrite: (path) =>
-            path.replace(new RegExp('^' + env.VITE_BASE_API), ''),
+            path.replace(
+              new RegExp('^' + env.VITE_BASE_API),
+              env.VITE_BASE_API,
+            ),
         },
       },
     },

@@ -27,7 +27,7 @@
       "src/**/*.jsx",
       "src/**/*.t/s",
       "src/**/*.js",
-      "types/**/*.d.ts",
+      "types/**/*.d.ts", // 项目内
       "core/**/*.d.ts",
       "vite.config.ts"
     ],

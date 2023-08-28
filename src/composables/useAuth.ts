@@ -1,5 +1,7 @@
+import { http } from '@/plugins/http';
 import router from '@/router';
 import { reactive, ref } from 'vue';
+const storage = useStorage();
 // 暂时直接引用路由
 //
 interface userInfo {
@@ -29,27 +31,38 @@ const rules = {
 
 const Login = async () => {
   try {
-    // const data = await http.post("/mock/sys/login", loginFrom, config) // 参数 空配置
-    // authStore.SETTIKEN(data.token)
-    // userInfo.value = data
+    // 返回数据的类型
+    const data = await http.request<ApiData<any>>({
+      url: '/mock/sys/login',
+      method: 'post',
+      data: loginFrom,
+    });
+    ElMessage({
+      message: data.message,
+      type: 'success',
+    });
 
-    const route = router.resolve({ name: 'home' });
-    location.href = route.fullPath;
-  } catch (error) {
-    console.log('🍏', error);
-  }
+    // 参数 空配置
+    storage.set(CacheEnum.TOKEN_NAME, data.data.token);
+    router.push({ name: 'home' });
+  } catch (error) {}
 };
-const getToken = async () => {
+const testToke = async () => {
   try {
-    const config = {
-      params: {}, // 提交参数 params  url拼接
-      custom: { auth: true, toast: true },
-    };
+    // 返回数据的类型
+    const data = await http.request<ApiData<any>>({
+      url: '/users/testtoken',
+      method: 'GET',
+    });
+    ElMessage({
+      message: data.message,
+      type: 'success',
+    });
   } catch {
     console.log('🍉');
   }
 };
 
 export default () => {
-  return { Login, userInfo, getToken, loginFrom, rules };
+  return { Login, userInfo, testToke, loginFrom, rules };
 };
