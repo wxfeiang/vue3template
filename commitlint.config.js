@@ -1,6 +1,6 @@
 /*
 eiang
- * @Description:
+ * @Description: peizhi
  * @Date: 2023-02-19 10:04:58
  * @LastEditTime: 2023-06-12 15:15:26
  * @FilePath: /vue3template/commitlint.config.js
