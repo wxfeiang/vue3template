@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const testnode = (id: any) => {
+  alert(id);
+};
+</script>
 <template>
   <el-container class="h-100">
     <el-aside width="200px" class="sider_style">
@@ -33,7 +37,18 @@
     <el-container>
       <el-header class="sider_style"> </el-header>
       <el-main>
-        <router-view></router-view>
+        <div class="gis">
+          <el-button
+            type="primary"
+            size="default"
+            @click="testnode(1)"
+            style="margin-top: 400px"
+            >gis 点击测试</el-button
+          >
+        </div>
+        <div class="content">
+          <router-view></router-view>
+        </div>
       </el-main>
     </el-container>
   </el-container>
@@ -48,5 +63,24 @@
   line-height: 100px;
   text-align: center;
   font-size: 20px;
+}
+.el-main {
+  position: relative;
+}
+.gis {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  z-index: 0;
+}
+.content {
+  position: absolute;
+  /* left: 0;
+  right: 0; */
+  width: 100%;
+  z-index: 1;
 }
 </style>
