@@ -2,10 +2,10 @@
  * @Author: wxfeiang
  * @Description:
  * @Date: 2023-02-19 09:55:35
- * @LastEditTime: 2023-08-28 14:29:35
+ * @LastEditTime: 2023-09-14 20:29:06
  * @FilePath: /vue3template/src/main.ts
  */
-import 'reset-css';
+
 import 'tailwindcss/tailwind.css';
 import { createApp } from 'vue';
 import App from './App.vue';
