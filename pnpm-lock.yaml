@@ -22,6 +22,9 @@ devDependencies:
   '@iconify-json/ep':
     specifier: ^1.1.12
     version: 1.1.12
+  '@pureadmin/release':
+    specifier: ^1.0.0
+    version: 1.0.0
   '@types/node':
     specifier: ^18.16.8
     version: 18.16.8
@@ -1037,6 +1040,11 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@pureadmin/release@1.0.0:
+    resolution: {integrity: sha512-cFXev9X+TQNmpb8E8agD53ZfL5DCYpY25SPpLUXo42Twa62vmJckc+xqh95r4tvgMi0eqUEFRuiSHr1oS3pHmQ==}
+    hasBin: true
     dev: true
 
   /@rollup/pluginutils@5.0.2:
