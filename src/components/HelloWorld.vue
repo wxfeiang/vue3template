@@ -18,6 +18,9 @@ const dd = () => {
   count.value++;
   ElMessage("thiccs iccccs a message.🍑[dd]:,");
 };
+const mittpush = () => {
+  console.log("🍮+++++++========");
+};
 </script>
 
 <template>
@@ -44,6 +47,7 @@ const dd = () => {
       <p class="text-slate-500">You have a new message!</p>
     </div>
   </div>
+  <el-button type="warning" @click="mittpush">兄弟组件触发事件</el-button>
 </template>
 
 <style scoped>

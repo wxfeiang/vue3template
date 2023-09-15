@@ -23,6 +23,7 @@ declare module '@vue/runtime-core' {
     ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
     ElRow: typeof import('element-plus/es')['ElRow']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
+    GisTest: typeof import('./../../src/components/GisTest.vue')['default']
     HelloWorld: typeof import('./../../src/components/HelloWorld.vue')['default']
     IEpApple: typeof import('~icons/ep/apple')['default']
     IEpEdit: typeof import('~icons/ep/edit')['default']
@@ -31,6 +32,7 @@ declare module '@vue/runtime-core' {
     Menu: typeof import('./../../src/components/menu.tsx')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SlotTest: typeof import('./../../src/components/SlotTest.vue')['default']
   }
   export interface ComponentCustomProperties {
     vLoading: typeof import('element-plus/es')['ElLoadingDirective']

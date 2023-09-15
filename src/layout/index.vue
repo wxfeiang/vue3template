@@ -38,13 +38,7 @@ const testnode = (id: any) => {
       <el-header class="sider_style"> </el-header>
       <el-main>
         <div class="gis">
-          <el-button
-            type="primary"
-            size="default"
-            @click="testnode(1)"
-            style="margin-top: 400px"
-            >gis 点击测试</el-button
-          >
+          <GisTest></GisTest>
         </div>
         <div class="content">
           <router-view></router-view>
@@ -69,8 +63,8 @@ const testnode = (id: any) => {
 }
 .gis {
   position: absolute;
-  left: 0px;
-  right: 0;
+  /* left: 0px;
+  right: 0*/
   width: 100%;
   height: 100%;
   background: #ccc;
