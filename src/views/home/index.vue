@@ -11,7 +11,13 @@
       <el-card> 其他情况 </el-card>
     </el-col>
   </el-row>
+  <div class="map">
+    <MapContainer></MapContainer>
+  </div>
 </template>
 <style lang="scss" scoped>
 //@import url(); 引入公共css类
+.map {
+  padding: 20px;
+}
 </style>

@@ -29,6 +29,7 @@ declare module '@vue/runtime-core' {
     IEpEdit: typeof import('~icons/ep/edit')['default']
     IEpMuteNotification: typeof import('~icons/ep/mute-notification')['default']
     Login: typeof import('./../../src/components/Login.vue')['default']
+    MapContainer: typeof import('./../../src/components/MapContainer.vue')['default']
     Menu: typeof import('./../../src/components/menu.tsx')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
