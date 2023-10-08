@@ -32,18 +32,13 @@ const rules = {
 const Login = async () => {
   try {
     // 返回数据的类型
-    const data = await http.request<ApiData<any>>({
-      url: '/mock/sys/login',
+    const { data } = await http.request<ApiData<any>>({
+      url: '/employee/login',
       method: 'post',
       data: loginFrom,
     });
-    ElMessage({
-      message: data.message,
-      type: 'success',
-    });
 
-    // 参数 空配置
-    storage.set(CacheEnum.TOKEN_NAME, data.data.token);
+    storage.set(CacheEnum.TOKEN_NAME, data.token);
     router.push({ name: 'home' });
   } catch (error) {}
 };

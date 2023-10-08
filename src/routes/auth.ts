@@ -2,13 +2,13 @@ import { RouteRecordRaw } from 'vue-router';
 
 export default {
   path: '/',
-  component: () => import('@/views/auth/index.vue'),
+  component: () => import('@/views/auth/login.vue'),
   // meta: { noPrefix: true },
   children: [
     {
       path: 'login',
       name: 'login',
-      component: () => import('@/views/auth/index.vue'),
+      component: () => import('@/views/auth/login.vue'),
     },
     // {
     //   path: 'register',

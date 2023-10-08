@@ -3,7 +3,7 @@
  * @Description:   请求方法 组件库自动导入了
  * @Date: 2023-08-28 09:06:24
  * @LastEditors: wxfeiang wxfeiang@qq.com
- * @LastEditTime: 2023-08-28 15:26:36
+ * @LastEditTime: 2023-10-08 22:55:01
  * @FilePath: /vue3template/src/plugins/http/request.ts
  * Copyright (c) 2023 by ${git_name} email: ${git_email}, All Rights Reserved.
  */
@@ -57,8 +57,9 @@ export default class Axios {
         }
         if (this.options.clearValidateError) useErrorStore().resetError();
         config.headers.Accept = 'application/json';
-        config.headers.Authorization = `${storage.get(CacheEnum.TOKEN_NAME)}`;
-        // FIX: 暂时去掉token 前缀 Bearer ，后端有返回
+        config.headers.Authorization = `Bearer ${storage.get(
+          CacheEnum.TOKEN_NAME,
+        )}`;
 
         return config;
       },
@@ -74,7 +75,7 @@ export default class Axios {
           this.loading.close();
           this.loading = undefined;
         }
-        const message = response.data?.success ?? response.data?.success;
+        const message = response.data?.message ?? response.data?.success;
         if (message && this.options.message) {
           ElMessage({
             type: 'success',
